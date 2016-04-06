@@ -1,8 +1,5 @@
 // https://www.hackerrank.com/challenges/sherlock-and-the-beast
 
-// this fails the tests from 4 onward, but diff-ing the output with one that
-// works gives THE EXACT SAME OUTPUT... WTF?!!
-
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
@@ -22,7 +19,7 @@ int main(int argc, char const *argv[]) {
       five_count--;
       if (five_count < 0) break;
 
-      three_count = (n-five_count*3)/3;
+      three_count = (n-five_count*3)/5;
       if (five_count*3 + three_count*5 == n) break;
     }
 
