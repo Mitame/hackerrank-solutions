@@ -19,7 +19,6 @@ int main(int argc, char const *argv[]) {
     // double decimal_b = modf(result_b, &integral_b);
 
     int count = (int) result_b - (int) result_a;
-    printf("%d\n", count);
 
     if (decimal_a == 0) {
       count++;
