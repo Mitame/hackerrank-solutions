@@ -10,3 +10,4 @@ target_link_libraries(sherlock-and-squares m)
 
 add_executable(service-lane service-lane.c)
 add_executable(cut-the-sticks cut-the-sticks.c)
+add_executable(chocolate-feast chocolate-feast.c)
