@@ -1,0 +1,9 @@
+language: c
+
+install: true
+
+script: 
+ - cmake .
+ - make
+
+compiler: gcc
