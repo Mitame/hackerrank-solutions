@@ -1,4 +1,5 @@
 project(HackerRank/Algorithms/Implementation C)
+use_c99()
 
 add_executable(angry-professor angry-professor.c)
 add_executable(sherlock-and-the-beast sherlock-and-the-beast.c)

@@ -1,4 +1,5 @@
 project(HackerRank/Algorithms/Warmup C)
+use_c99()
 
 add_executable(solve-me-first solve-me-first.c)
 add_executable(simple-array-sum simple-array-sum.c)
