@@ -13,3 +13,4 @@ macro(use_c99)
 endmacro(use_c99)
 
 add_subdirectory(algorithms)
+add_subdirectory(mathematics)
