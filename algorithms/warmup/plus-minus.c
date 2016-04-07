@@ -10,9 +10,7 @@ int main(int argc, char const *argv[]) {
   int n_count = 0;
   int p_count = 0;
   int z_count = 0;
-
-  int i;
-  for (i = 0; i < n; i++) {
+  for(int i = 0; i < n; i++){
     scanf("%d", &num);
     if (num > 0)
       p_count++;

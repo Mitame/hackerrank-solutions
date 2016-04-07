@@ -12,8 +12,7 @@ int main(int argc, char const *argv[]) {
   int length;
   int max = 0;
   int min = sticks[0];
-  int i;
-  for (i = 0; i < n; i++) {
+  for (int i = 0; i < n; i++) {
     scanf("%i", &length);
     sticks[i] = length;
 
@@ -30,8 +29,8 @@ int main(int argc, char const *argv[]) {
     count = 0;
     new_min = max;
     max = 0;
-    int i;
-    for (i = 0; i < n; i++) {
+
+    for (int i = 0; i < n; i++) {
       sticks[i] -= min;
 
       if (sticks[i] > max) {

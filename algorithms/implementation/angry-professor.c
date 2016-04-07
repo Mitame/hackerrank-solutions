@@ -11,11 +11,10 @@ int main(int argc, char const *argv[]) {
   int k;
   int students_on_time;
   int late;
-  int i_t, i_n;
-  for (i_t = 0; i_t < t; i_t++) {
+  for (int i_t = 0; i_t < t; i_t++) {
     scanf("%d %d\n", &n, &k);
     students_on_time = 0;
-    for (i_n = 0; i_n < n; i_n++) {
+    for (int i_n = 0; i_n < n; i_n++) {
       scanf("%d", &late);
       if (late <= 0) {
         students_on_time++;

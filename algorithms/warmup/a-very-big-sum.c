@@ -18,8 +18,7 @@ int main(int argc, char const *argv[]) {
 
   num_str = strtok(num_string, " ");
   long long test;
-  int i;
-  for (i = 0; i < num_items; i++, num_str = strtok(NULL, " ")){
+  for (int i = 0; i < num_items; i++, num_str = strtok(NULL, " ")){
     test = strtoll(num_str, &endptr, 10);
     sum += test;
   }
