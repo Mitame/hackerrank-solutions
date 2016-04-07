@@ -17,7 +17,8 @@ int main(int argc, char const *argv[]) {
   char * endptr;
 
   num_str = strtok(num_string, " ");
-  for (int i = 0; i < num_items; i++, num_str = strtok(NULL, " "))
+  int i;
+  for (i = 0; i < num_items; i++, num_str = strtok(NULL, " "))
     sum += strtol(num_str, &endptr, 10);
 
   printf("%d\n", sum);

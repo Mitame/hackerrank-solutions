@@ -8,7 +8,8 @@ int main(int argc, char const *argv[]) {
   scanf("%d", &t);
 
   int n, c, m;
-  for (int i_t = 0; i_t < t; i_t++){
+  int i_t;
+  for (i_t = 0; i_t < t; i_t++){
     scanf("%d %d %d", &n, &c, &m);
     int total = n/c;
     int tickets = total;

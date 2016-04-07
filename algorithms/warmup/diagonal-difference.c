@@ -9,8 +9,10 @@ int main(){
   int curr;
   int sum_a = 0;
   int sum_b = 0;
-  for(int a_i = 0; a_i < n; a_i++){
-    for(int a_j = 0; a_j < n; a_j++){
+
+  int a_i, a_j;
+  for (a_i = 0; a_i < n; a_i++) {
+    for (a_j = 0; a_j < n; a_j++) {
       scanf("%d", &curr);
       if (a_i == a_j) {
         sum_a += curr;

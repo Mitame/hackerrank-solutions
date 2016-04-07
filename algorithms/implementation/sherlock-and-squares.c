@@ -7,7 +7,8 @@ int main(int argc, char const *argv[]) {
   int t;
   scanf("%d", &t);
 
-  for (int i_t = 0; i_t < t; i_t++) {
+  int i_t;
+  for (i_t = 0; i_t < t; i_t++) {
     long long a, b;
     scanf("%lld %lld", &a, &b);
 

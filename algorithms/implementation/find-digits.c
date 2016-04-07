@@ -9,7 +9,8 @@ int main(int argc, char const *argv[]) {
   scanf("%d\n", &t);
 
   char n[10]; // max 10^9-1 + null char = 10 characters
-  for (int i_t = 0; i_t < t; i_t++) {
+  int i_t;
+  for (i_t = 0; i_t < t; i_t++) {
     scanf("%s", &n);
 
     int n_value;
@@ -21,7 +22,8 @@ int main(int argc, char const *argv[]) {
 
     int count = 0;
     int curr_char;
-    for(int i = 0; i < strlen(n); i++){
+    int i;
+    for(i = 0; i < strlen(n); i++){
       curr_char = (int)n[i] - 48;
       if (curr_char == 0) continue;
       if (n_value % curr_char == 0){

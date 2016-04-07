@@ -12,12 +12,13 @@ int main(int argc, char const *argv[]) {
   char * widths = malloc(sizeof(char)*n);
 
   int width;
-  for (int i = 0; i < n; i++) {
+  int i;
+  for (i = 0; i < n; i++) {
     scanf("%d", &width);
     widths[i] = (char) width;
   }
-
-  for (int i_t = 0; i_t < t; i_t++) {
+  int i_t;
+  for (i_t = 0; i_t < t; i_t++) {
     int i, j;
     scanf("%d %d", &i, &j);
 

@@ -10,7 +10,8 @@ int main(int argc, char const *argv[]) {
   int five_count = 0;
   int three_count = 0;
   char * output;
-  for (int i_t = 0; i_t < t; i_t++){
+  int i_t;
+  for (i_t = 0; i_t < t; i_t++){
     scanf("%d", &n);
 
     five_count = n/3 + 1;
@@ -26,9 +27,10 @@ int main(int argc, char const *argv[]) {
     if (five_count*3 + three_count*5 != n){
       printf("-1\n");
     } else {
-      for (int i = 0; i < five_count; i++)
+      int i;
+      for (i = 0; i < five_count; i++)
         printf("555");
-      for (int i = 0; i < three_count; i++)
+      for (i = 0; i < three_count; i++)
         printf("33333");
       printf("\n");
     }

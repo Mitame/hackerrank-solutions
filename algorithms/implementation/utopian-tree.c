@@ -8,11 +8,13 @@ int main(int argc, char const *argv[]) {
 
   int cycles;
   int height;
-  for (int i_t = 0; i_t < t; i_t++){
+  int i_t;
+  for (i_t = 0; i_t < t; i_t++){
     height = 1;
     scanf("%d", &cycles);
 
-    for (int i_c = 0; i_c < cycles; i_c++) {
+    int i_c;
+    for (i_c = 0; i_c < cycles; i_c++) {
       if (i_c % 2) {
         height++;
       } else {
