@@ -4,19 +4,20 @@ int main() {
     int T;
     scanf("%d", &T);
 
-    int n;
+    long long n;
     for (int i_T = 0; i_T < T; i_T++) {
-        scanf("%d", &n);
+        scanf("%lld", &n);
 
-        int count_3 = (n-1)/3;
-        int count_5 = (n-1)/5;
-        int count_15 = (n-1)/15;
-        int sum = (
+        long long count_3 = (n-1)/3;
+        long long count_5 = (n-1)/5;
+        long long count_15 = (n-1)/15;
+
+        long long sum = (
                     3 * count_3 * (count_3 + 1)
                     + 5 * count_5 * (count_5 + 1)
                     - 15 * count_15 * (count_15 + 1)
-                  ) / 2;
-        printf("%d\n", sum);
+                  ) >> 1;
+        printf("%lld\n", sum);
     }
 
     return 0;
