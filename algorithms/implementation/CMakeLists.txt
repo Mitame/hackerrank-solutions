@@ -1,15 +1,5 @@
 project(HackerRank/Algorithms/Implementation C)
 use_c99()
+add_c_files()
 
-add_executable(angry-professor angry-professor.c)
-add_executable(sherlock-and-the-beast sherlock-and-the-beast.c)
-add_executable(utopian-tree utopian-tree.c)
-add_executable(find-digits find-digits.c)
-
-add_executable(sherlock-and-squares sherlock-and-squares.c)
 target_link_libraries(sherlock-and-squares m)
-
-add_executable(service-lane service-lane.c)
-add_executable(cut-the-sticks cut-the-sticks.c)
-add_executable(chocolate-feast chocolate-feast.c)
-add_executable(bear-and-workbook bear-and-workbook.c)
