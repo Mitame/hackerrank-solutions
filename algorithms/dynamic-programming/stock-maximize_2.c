@@ -1,5 +1,5 @@
 // https://www.hackerrank.com/challenges/stockmax
-
+// code works on any reasonable system, not on hackerrank...
 #include <stdio.h>
 
 int main(int argc, char const *argv[]) {
@@ -11,9 +11,9 @@ int main(int argc, char const *argv[]) {
     scanf("%d", &n);
 
     int price;
-    int maxes[50];
-    long sums[50];
-    int count[50];
+    long long maxes[50];
+    long long sums[50];
+    long long count[50];
     int cur_index = 0;
 
     maxes[0] = 0;
@@ -41,11 +41,12 @@ int main(int argc, char const *argv[]) {
       count[cur_index]++;
     }
 
-    long profit = 0;
+    long long profit = 0;
     for (int i = 0; i <= cur_index; i++) {
-      profit += maxes[i]*count[i] - sums[i];
+      profit += maxes[i] * count[i] - sums[i];
+      // printf("%d * %d - %lld\n", maxes[i] , count[i], sums[i]);
     }
-    printf("%ld\n", profit);
+    printf("%lld\n", profit);
   }
 
   return 0;
